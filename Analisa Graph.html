@@ -6,8 +6,9 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index &#8212; Materi Matematika Diskrit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Social Network Analysis (SNA) &#8212; Materi Matematika Diskrit</title>
   
   
   
@@ -56,9 +57,12 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'genindex';</script>
-    <link rel="index" title="Index" href="#" />
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Analisa Graph';</script>
+    <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Aljabar Boolean" href="Aljabar-Boolean.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -121,8 +125,6 @@
       
       
       
-        
-      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -178,7 +180,7 @@
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="HIMPUNAN.html">1. De Morgan Laws</a></li>
 
 
@@ -189,7 +191,7 @@
 <li class="toctree-l1"><a class="reference internal" href="Aljabar-Boolean.html">Aljabar Boolean</a></li>
 
 
-<li class="toctree-l1"><a class="reference internal" href="Analisa%20Graph.html">Social Network Analysis (SNA)</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Social Network Analysis (SNA)</a></li>
 </ul>
 
     </div>
@@ -261,7 +263,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fgenindex.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FAnalisa Graph.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -273,6 +275,54 @@
   </span>
 <span class="btn__text-container">Open issue</span>
 </a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/Analisa Graph.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
 </li>
       
   </ul>
@@ -314,7 +364,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -325,11 +377,21 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1></h1>
+    <h1>Social Network Analysis (SNA)</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#degree-centrality">Degree Centrality</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#betweenness-centrality">Betweenness Centrality</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#closeness-centrality">Closeness Centrality</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -339,13 +401,63 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
+  <section id="social-network-analysis-sna">
+<h1>Social Network Analysis (SNA)<a class="headerlink" href="#social-network-analysis-sna" title="Link to this heading">#</a></h1>
+<p>Sistem analisis data yang berfungsi membuat data lebih terstruktur agar mudah dalam melakukan pengukuran. SNA merupakan analisis yang memiliki fungsi dalam menggambarkan bagaimana struktur sosial dan hubungan antar struktur sosial.</p>
+<p>SNA menggambarkan struktur yang saling berhubungan, merepresentasikan individu atau sistem dalam suatu jaringan (nodes), maupun yang menggambarkan hubungan atau interaksi antar individu tersebut (edges).</p>
+<p>Berikut adalah penjelasan tentang berbagai metrik sentralitas yang digunakan dalam analisis jaringan:</p>
+<section id="degree-centrality">
+<h2>Degree Centrality<a class="headerlink" href="#degree-centrality" title="Link to this heading">#</a></h2>
+<p>Degree centrality mengukur jumlah koneksi langsung (edges) yang dimiliki suatu node. Node dengan degree centrality tinggi dianggap sebagai pusat dari jaringan karena memiliki banyak hubungan langsung dengan node lainnya. Misalnya, dalam jaringan sosial, seseorang dengan banyak koneksi akan memiliki nilai degree centrality yang tinggi.
+Rumusnya adalah:</p>
+<div class="math notranslate nohighlight">
+\[
+C_D(v) = \frac{\text{deg}(v)}{n - 1}
+\]</div>
+<p>Di mana:</p>
+<p>deg(v) : jumlah koneksi langsung dari node v
+n : total jumlah node dalam jaringan.</p>
+</section>
+<section id="betweenness-centrality">
+<h2>Betweenness Centrality<a class="headerlink" href="#betweenness-centrality" title="Link to this heading">#</a></h2>
+<p>Betweenness centrality mengevaluasi sejauh mana sebuah node berada di antara node-node lainnya dalam jaringan. Ini didasarkan pada jumlah jalur terpendek di mana node tersebut menjadi perantara. Node dengan nilai betweenness tinggi dianggap penting karena berfungsi sebagai penghubung antar bagian jaringan, memungkinkan informasi atau sumber daya mengalir lebih efisien.
+Rumusnya adalah:
+$<span class="math notranslate nohighlight">\(
+C_B(v) = \sum_{s \neq v \neq t} \frac{\sigma_{st}(v)}{\sigma_{st}}
+\)</span>$
+Penjelasan untuk simbol-simbolnya:</p>
+<p>𝜎𝑠𝑡 σ st : Jumlah jalur terpendek antara node s dan t.
+𝜎𝑠𝑡(𝑣)σ st(v): Jumlah jalur terpendek antara s dan t yang melewati node v.</p>
+</section>
+<section id="closeness-centrality">
+<h2>Closeness Centrality<a class="headerlink" href="#closeness-centrality" title="Link to this heading">#</a></h2>
+<p>Closeness centrality mengukur kedekatan sebuah node terhadap semua node lainnya dalam jaringan. Ini dihitung berdasarkan jarak rata-rata dari satu node ke semua node lainnya. Node dengan nilai closeness tinggi memiliki akses lebih cepat ke seluruh jaringan karena berada di posisi strategis
+<img alt="closeness centrality" src="https://hackmd.io/_uploads/S1BJPzdzkg.png" /></p>
+<p>referensi by:
+<a class="reference external" href="https://www.sbm.itb.ac.id/id/2023/07/20/menganalisa-data-besar-dengan-social-network-analysis-sna/">https://www.sbm.itb.ac.id/id/2023/07/20/menganalisa-data-besar-dengan-social-network-analysis-sna/</a>
+<a class="reference external" href="https://ejurnal.stmik-budidarma.ac.id/index.php/jurikom/article/download/4053/2709">https://ejurnal.stmik-budidarma.ac.id/index.php/jurikom/article/download/4053/2709</a></p>
+</section>
+</section>
 
-<h1 id="index">Index</h1>
-
-<div class="genindex-jumpbox">
- 
-</div>
-
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
                 </article>
               
@@ -357,12 +469,38 @@ document.write(`
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
+    <a class="left-prev"
+       href="Aljabar-Boolean.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Aljabar Boolean</p>
+      </div>
+    </a>
 </div>
                 </footer>
               
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#degree-centrality">Degree Centrality</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#betweenness-centrality">Betweenness Centrality</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#closeness-centrality">Closeness Centrality</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
