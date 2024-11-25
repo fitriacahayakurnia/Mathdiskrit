@@ -1,5 +1,5 @@
 ---
-title: Deretan dan Reduksi
+title: Deretan dan Rekursi
 
 ---
 
