@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>1. De Morgan Laws &#8212; Materi Matematika Diskrit</title>
+    <title>HIMPUNAN &#8212; Materi Matematika Diskrit</title>
   
   
   
@@ -63,7 +63,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="LOGIKA MATEMATIKA" href="LOGIKA-MATEMATIKA.html" />
-    <link rel="prev" title="Welcome to your Jupyter Book" href="intro.html" />
+    <link rel="prev" title="Welcome to fitria cahaya kurnia’s notes" href="intro.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -177,21 +177,19 @@
         <ul class="nav bd-sidenav bd-sidenav__home-link">
             <li class="toctree-l1">
                 <a class="reference internal" href="intro.html">
-                    Welcome to your Jupyter Book
+                    Welcome to fitria cahaya kurnia’s notes
                 </a>
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">1. De Morgan Laws</a></li>
-
-
-
-
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">HIMPUNAN</a></li>
 <li class="toctree-l1"><a class="reference internal" href="LOGIKA-MATEMATIKA.html">LOGIKA MATEMATIKA</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Algoritma.html">Algoritma</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Aljabar-Boolean.html">Aljabar Boolean</a></li>
 
 
+<li class="toctree-l1"><a class="reference internal" href="Analisa%20Graph.html">Social Network Analysis (SNA)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Deretan%20dan%20Reduksi.html">Deret dan Reduksi</a></li>
 </ul>
 
     </div>
@@ -377,7 +375,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>1. De Morgan Laws</h1>
+    <h1>HIMPUNAN</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -387,27 +385,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">1. De Morgan Laws</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan">Penjelasan:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#de-morgan-laws">1. <strong>De Morgan Laws</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#absortion-laws"><strong>2. Absortion Laws</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#complement-laws"><strong>3. Complement Laws</strong></a></li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#absortion-laws">2. Absortion Laws</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hukum-absorpsi-kedua-untuk-gabungan-dan-irisan">2. Hukum Absorpsi Kedua (untuk gabungan dan irisan)</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#penyelesaian"><strong>Penyelesaian:</strong></a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#buktikan-a-cup-a-cap-b-a">1. <strong>Buktikan <span class="math notranslate nohighlight">\(( A \cup (A \cap B) = A)\)</span>:</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#buktikan-a-cap-a-cup-b-a">2. <strong>Buktikan <span class="math notranslate nohighlight">\(( A \cap (A \cup B) = A)\)</span>:</strong></a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#jawaban"><strong>Jawaban:</strong></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#complement-laws">3. Complement Laws</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hukum-komplemen-gabungan">1. Hukum Komplemen Gabungan</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hukum-komplemen-irisan">2. Hukum Komplemen Irisan</a></li>
-</ul>
-</li>
-</ul>
-
             </nav>
         </div>
     </div>
@@ -418,12 +399,12 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <div style="text-align: justify;">
+  <section id="himpunan">
+<h1>HIMPUNAN<a class="headerlink" href="#himpunan" title="Link to this heading">#</a></h1>
 <section id="de-morgan-laws">
-<h1>1. De Morgan Laws<a class="headerlink" href="#de-morgan-laws" title="Link to this heading">#</a></h1>
+<h2>1. <strong>De Morgan Laws</strong><a class="headerlink" href="#de-morgan-laws" title="Link to this heading">#</a></h2>
 <p>Ekspresi <span class="math notranslate nohighlight">\(\overline{A \cap B}=\bar{A}\cup \bar{B}\)</span> dikenal sebagai <strong>De Morgan Laws</strong> dalam teori himpunan dan logika. Ini menyatakan bahwa komplemen dari irisan dua himpunan sama dengan gabungan dari komplemen keduanya.</p>
-<section id="penjelasan">
-<h2>Penjelasan:<a class="headerlink" href="#penjelasan" title="Link to this heading">#</a></h2>
+<p><strong>Penjelasan:</strong></p>
 <ol class="arabic simple">
 <li><p><span class="math notranslate nohighlight">\(A\cap B\)</span> adalah himpunan dari semua elemen      yang berada di <span class="math notranslate nohighlight">\(A\)</span> dan <span class="math notranslate nohighlight">\(B\)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\(\overline{A \cap B}\)</span> adalah himpunan semua      elemen yang <strong>tidak</strong> berada di <span class="math notranslate nohighlight">\(A\)</span> dan <span class="math notranslate nohighlight">\(B\)</span></p></li>
@@ -431,10 +412,9 @@ document.write(`
 <li><p><span class="math notranslate nohighlight">\(\bar{B}\)</span> adalah himpunan semua elemen yang      <strong>tidak</strong> berada di <span class="math notranslate nohighlight">\(B\)</span></p></li>
 <li><p><span class="math notranslate nohighlight">\(\bar{A}\cup \bar{B}\)</span> adalah himpunan semua      elemen yang berada di luar <span class="math notranslate nohighlight">\(A\)</span> atau <span class="math notranslate nohighlight">\(B\)</span>          (komplemen dari <span class="math notranslate nohighlight">\(A\)</span> atau komplemen <span class="math notranslate nohighlight">\(B\)</span>)</p></li>
 </ol>
-<p>Jadi, <span class="math notranslate nohighlight">\(\overline{A \cap B}\)</span> mencangkup semua yang <strong>tidak</strong> ada di <span class="math notranslate nohighlight">\(A\)</span> dan <span class="math notranslate nohighlight">\(B\)</span> secara bersamaan, yang sama dengan elemen-elemen yang berada diluar <span class="math notranslate nohighlight">\(A\)</span> atau di luar <span class="math notranslate nohighlight">\(B\)</span>, yaitu <span class="math notranslate nohighlight">\(\bar{A}\cup \bar{B}\)</span>.
-Contoh Soal:
-Berikut contoh soal sederhana yang melibatkan hukum de Morgan <span class="math notranslate nohighlight">\(\overline{A \cap B} = \bar{A} \cup \bar{B}\)</span>:</p>
-<p><strong>Soal:</strong>
+<p>Jadi, <span class="math notranslate nohighlight">\(\overline{A \cap B}\)</span> mencangkup semua yang <strong>tidak</strong> ada di <span class="math notranslate nohighlight">\(A\)</span> dan <span class="math notranslate nohighlight">\(B\)</span> secara bersamaan, yang sama dengan elemen-elemen yang berada diluar <span class="math notranslate nohighlight">\(A\)</span> atau di luar <span class="math notranslate nohighlight">\(B\)</span>, yaitu <span class="math notranslate nohighlight">\(\bar{A}\cup \bar{B}\)</span>.</p>
+<p>Contoh Soal:
+Berikut contoh soal sederhana yang melibatkan hukum de Morgan <span class="math notranslate nohighlight">\(\overline{A \cap B} = \bar{A} \cup \bar{B}\)</span>:
 Diberikan dua himpunan sebagai berikut:</p>
 <ul class="simple">
 <li><p>A = {1, 2, 3, 4}</p></li>
@@ -462,17 +442,15 @@ Karena <span class="math notranslate nohighlight">\(\overline{A \cap B} = \{1, 2
 Jadi, hukum de Morgan berlaku untuk himpunan A dan B pada soal ini.</p></li>
 </ol>
 </section>
-</section>
 <section id="absortion-laws">
-<h1>2. Absortion Laws<a class="headerlink" href="#absortion-laws" title="Link to this heading">#</a></h1>
-<p>Ekspresi <span class="math notranslate nohighlight">\(A \cup(A\cap B)=A\)</span> dikenal sebagai <strong>Absortion Laws</strong> dalam teori himpunan dan logika, ada dua aturan yang menjelaskan bagaimana operasi himpunan (atau logika) dapat disederhanakan. Aturan-aturan ini menunjukkan bahwa operasi tertentu bisa “diserap” oleh himpunan atau proposisi lain, sehingga menghilangkan operasi yang tidak perlu.
-#### 1. Hukum Absorpsi Pertama (untuk irisan dan gabungan)
-<span class="math notranslate nohighlight">\(A \cup(A\cap B)=A\)</span>
-<strong>Penjelasan:</strong> Gabungan dari himpunan <span class="math notranslate nohighlight">\(A\)</span> dengan irisan <span class="math notranslate nohighlight">\(A\)</span> dan <span class="math notranslate nohighlight">\(B\)</span> tetap menghasilkan <span class="math notranslate nohighlight">\(A\)</span>. Alasannya, elemen dalam <span class="math notranslate nohighlight">\(A\cap B\)</span> pasti juga ada didalam <span class="math notranslate nohighlight">\(A\)</span>. Jadi, menambahkan irisan itu ke <span class="math notranslate nohighlight">\(A\)</span> tidak mengubah <span class="math notranslate nohighlight">\(A\)</span>.</p>
-<section id="hukum-absorpsi-kedua-untuk-gabungan-dan-irisan">
-<h2>2. Hukum Absorpsi Kedua (untuk gabungan dan irisan)<a class="headerlink" href="#hukum-absorpsi-kedua-untuk-gabungan-dan-irisan" title="Link to this heading">#</a></h2>
-<p><span class="math notranslate nohighlight">\(A \cap(A\cup B)=A\)</span>
-<strong>Penjelasan:</strong> Irisan dari himpunan <span class="math notranslate nohighlight">\(A\)</span> dengan gabungan <span class="math notranslate nohighlight">\(A\)</span> dan <span class="math notranslate nohighlight">\(B\)</span> tetap menghasilkan <span class="math notranslate nohighlight">\(A\)</span>. Alasannya, setiap elemen yang ada di <span class="math notranslate nohighlight">\(A\)</span> akan tetap ada pada irisan tersebut, karena <span class="math notranslate nohighlight">\(A\)</span> sudah merupakan bagian dari <span class="math notranslate nohighlight">\(A\cup B\)</span>, sehingga <span class="math notranslate nohighlight">\(B\)</span> tidak menambah elemen apapun ke hasil akhir.</p>
+<h2><strong>2. Absortion Laws</strong><a class="headerlink" href="#absortion-laws" title="Link to this heading">#</a></h2>
+<p>Ekspresi <span class="math notranslate nohighlight">\(A \cup(A\cap B)=A\)</span> dikenal sebagai <strong>Absortion Laws</strong> dalam teori himpunan dan logika, ada dua aturan yang menjelaskan bagaimana operasi himpunan (atau logika) dapat disederhanakan. Aturan-aturan ini menunjukkan bahwa operasi tertentu bisa “diserap” oleh himpunan atau proposisi lain, sehingga menghilangkan operasi yang tidak perlu.</p>
+<p><strong>1. Hukum Absorpsi Pertama (untuk irisan dan gabungan)</strong>
+$<span class="math notranslate nohighlight">\(A \cup(A\cap B)=A\)</span><span class="math notranslate nohighlight">\(
+**Penjelasan:** Gabungan dari himpunan \)</span>A<span class="math notranslate nohighlight">\( dengan irisan \)</span>A<span class="math notranslate nohighlight">\( dan \)</span>B<span class="math notranslate nohighlight">\( tetap menghasilkan \)</span>A<span class="math notranslate nohighlight">\(. Alasannya, elemen dalam \)</span>A\cap B<span class="math notranslate nohighlight">\( pasti juga ada didalam \)</span>A<span class="math notranslate nohighlight">\(. Jadi, menambahkan irisan itu ke \)</span>A<span class="math notranslate nohighlight">\( tidak mengubah \)</span>A$.</p>
+<p><strong>2. Hukum Absorpsi Kedua (untuk gabungan dan irisan)</strong>
+$<span class="math notranslate nohighlight">\(A \cap(A\cup B)=A\)</span><span class="math notranslate nohighlight">\(
+**Penjelasan:** Irisan dari himpunan \)</span>A<span class="math notranslate nohighlight">\( dengan gabungan \)</span>A<span class="math notranslate nohighlight">\( dan \)</span>B<span class="math notranslate nohighlight">\( tetap menghasilkan \)</span>A<span class="math notranslate nohighlight">\(. Alasannya, setiap elemen yang ada di \)</span>A<span class="math notranslate nohighlight">\( akan tetap ada pada irisan tersebut, karena \)</span>A<span class="math notranslate nohighlight">\( sudah merupakan bagian dari \)</span>A\cup B<span class="math notranslate nohighlight">\(, sehingga \)</span>B$ tidak menambah elemen apapun ke hasil akhir.</p>
 <p><strong>Absorption Laws:</strong></p>
 <ol class="arabic simple">
 <li><p><span class="math notranslate nohighlight">\(( A \cup (A \cap B) = A)\)</span></p></li>
@@ -485,12 +463,9 @@ Diberikan dua himpunan sebagai berikut:</p>
 <li><p>B = {2, 3, 4}</p></li>
 </ul>
 <p>Tentukan apakah hukum absorpsi berlaku untuk himpunan A dan B.</p>
-</section>
-</section>
-<section id="penyelesaian">
-<h1><strong>Penyelesaian:</strong><a class="headerlink" href="#penyelesaian" title="Link to this heading">#</a></h1>
-<section id="buktikan-a-cup-a-cap-b-a">
-<h2>1. <strong>Buktikan <span class="math notranslate nohighlight">\(( A \cup (A \cap B) = A)\)</span>:</strong><a class="headerlink" href="#buktikan-a-cup-a-cap-b-a" title="Link to this heading">#</a></h2>
+<p><strong>Penyelesaian:</strong></p>
+<ol class="arabic simple">
+<li><p><strong>Buktikan <span class="math notranslate nohighlight">\(( A \cup (A \cap B) = A)\)</span>:</strong></p>
 <ul class="simple">
 <li><p><strong>Langkah 1:</strong> Tentukan ( A \cap B ):
 <span class="math notranslate nohighlight">\(A \cap B = \{2, 3\}\)</span></p></li>
@@ -498,9 +473,8 @@ Diberikan dua himpunan sebagai berikut:</p>
 <span class="math notranslate nohighlight">\(A \cup (A \cap B) = \{1, 2, 3\} \cup \{2, 3\} = \{1, 2, 3\}\)</span></p></li>
 <li><p><strong>Kesimpulan:</strong> <span class="math notranslate nohighlight">\(( A \cup (A \cap B) = A)\)</span>, jadi hukum absorpsi <strong>berlaku</strong>.</p></li>
 </ul>
-</section>
-<section id="buktikan-a-cap-a-cup-b-a">
-<h2>2. <strong>Buktikan <span class="math notranslate nohighlight">\(( A \cap (A \cup B) = A)\)</span>:</strong><a class="headerlink" href="#buktikan-a-cap-a-cup-b-a" title="Link to this heading">#</a></h2>
+</li>
+<li><p><strong>Buktikan <span class="math notranslate nohighlight">\(( A \cap (A \cup B) = A)\)</span>:</strong></p>
 <ul class="simple">
 <li><p><strong>Langkah 1:</strong> Tentukan ( A \cup B ):
 <span class="math notranslate nohighlight">\(A \cup B = \{1, 2, 3, 4\}\)</span></p></li>
@@ -508,31 +482,32 @@ Diberikan dua himpunan sebagai berikut:</p>
 <span class="math notranslate nohighlight">\(A \cap (A \cup B) = \{1, 2, 3\} \cap \{1, 2, 3, 4\} = \{1, 2, 3\}\)</span></p></li>
 <li><p><strong>Kesimpulan:</strong> <span class="math notranslate nohighlight">\(( A \cap (A \cup B) = A)\)</span>, jadi hukum absorpsi <strong>berlaku</strong>.</p></li>
 </ul>
-</section>
-</section>
-<section id="jawaban">
-<h1><strong>Jawaban:</strong><a class="headerlink" href="#jawaban" title="Link to this heading">#</a></h1>
-<p>Hukum absorpsi berlaku untuk himpunan <span class="math notranslate nohighlight">\(A\)</span> = {1, 2, 3} dan <span class="math notranslate nohighlight">\(B\)</span> = {2, 3, 4}, baik untuk <span class="math notranslate nohighlight">\(( A \cup (A \cap B) = A)\)</span> maupun <span class="math notranslate nohighlight">\(( A \cap (A \cup B) = A )\)</span></p>
+</li>
+</ol>
+<p><strong>Jawaban:</strong>
+Hukum absorpsi berlaku untuk himpunan <span class="math notranslate nohighlight">\(A\)</span> = {1, 2, 3} dan <span class="math notranslate nohighlight">\(B\)</span> = {2, 3, 4}, baik untuk <span class="math notranslate nohighlight">\(( A \cup (A \cap B) = A)\)</span> maupun <span class="math notranslate nohighlight">\(( A \cap (A \cup B) = A )\)</span></p>
 </section>
 <section id="complement-laws">
-<h1>3. Complement Laws<a class="headerlink" href="#complement-laws" title="Link to this heading">#</a></h1>
+<h2><strong>3. Complement Laws</strong><a class="headerlink" href="#complement-laws" title="Link to this heading">#</a></h2>
 <p>Hukum komplemen dalam teori himpunan dan logika menjelaskan hubungan antara suatu himpunan dengan komplemennya. Hukum ini mengatur bagaimana suatu himpunan berinteraksi dengan komplemennya, baik melalui gabungan (<em>union</em>) maupun irisan (<em>intersection</em>).</p>
-<section id="hukum-komplemen-gabungan">
-<h2>1. Hukum Komplemen Gabungan<a class="headerlink" href="#hukum-komplemen-gabungan" title="Link to this heading">#</a></h2>
-<p><span class="math notranslate nohighlight">\(A\cup \bar{A}=U\)</span>
-<strong>Penjelasan:</strong> <span class="math notranslate nohighlight">\(A\)</span> adalah suatu himpunan yang merupakan bagian dari himpunan semesta <span class="math notranslate nohighlight">\(U\)</span>. <span class="math notranslate nohighlight">\(\bar{A}\)</span> adalah komplemen dari himpunan <span class="math notranslate nohighlight">\(A\)</span>, yang terdiri dari semua elemen dalam <span class="math notranslate nohighlight">\(U\)</span> yang <strong>tidak ada</strong> di <span class="math notranslate nohighlight">\(A\)</span>. <span class="math notranslate nohighlight">\(\cup\)</span> adalah operasi gabungan (<em>union</em>), yang menggabungkan dua himpunan dan menghasilkan himpunan baru yang berisi semua elemen yang ada di kedua himpunan tersebut.
-<strong>Contoh:</strong> Misalkan semesta <span class="math notranslate nohighlight">\(U\)</span> = {1,2,3,4,5} dan himpunan <span class="math notranslate nohighlight">\(A\)</span> = {1,2}. Maka:</p>
+<ol class="arabic simple">
+<li><p>Hukum Komplemen Gabungan
+<span class="math notranslate nohighlight">\(A\cup \bar{A}=U\)</span></p></li>
+</ol>
+<p><strong>Penjelasan:</strong>
+<span class="math notranslate nohighlight">\(A\)</span> adalah suatu himpunan yang merupakan bagian dari himpunan semesta <span class="math notranslate nohighlight">\(U\)</span>. <span class="math notranslate nohighlight">\(\bar{A}\)</span> adalah komplemen dari himpunan <span class="math notranslate nohighlight">\(A\)</span>, yang terdiri dari semua elemen dalam <span class="math notranslate nohighlight">\(U\)</span> yang <strong>tidak ada</strong> di <span class="math notranslate nohighlight">\(A\)</span>. <span class="math notranslate nohighlight">\(\cup\)</span> adalah operasi gabungan (<em>union</em>), yang menggabungkan dua himpunan dan menghasilkan himpunan baru yang berisi semua elemen yang ada di kedua himpunan tersebut.</p>
+<p><strong>Contoh:</strong>
+Misalkan semesta <span class="math notranslate nohighlight">\(U\)</span> = {1,2,3,4,5} dan himpunan <span class="math notranslate nohighlight">\(A\)</span> = {1,2}. Maka:</p>
 <ol class="arabic simple">
 <li><p>Komplemen <span class="math notranslate nohighlight">\(\bar{A}\)</span> = {3,4,5}</p></li>
 <li><p>Gabungan <span class="math notranslate nohighlight">\(A\cup \bar{A}\)</span> = {1,2} <span class="math notranslate nohighlight">\(\cup\)</span> {3,4,5} = {1,2,3,4,5} = <span class="math notranslate nohighlight">\(U\)</span>.</p></li>
+<li><p>Hukum Komplemen Irisan
+<span class="math notranslate nohighlight">\(A \cap \overline{A} = \emptyset\)</span></p></li>
 </ol>
-</section>
-<section id="hukum-komplemen-irisan">
-<h2>2. Hukum Komplemen Irisan<a class="headerlink" href="#hukum-komplemen-irisan" title="Link to this heading">#</a></h2>
-<p><span class="math notranslate nohighlight">\(A \cap \overline{A} = \emptyset\)</span>
-<strong>Penjelasan:</strong> Hukum ini menyatakan bahwa jika kita mengambil suatu himpunan <span class="math notranslate nohighlight">\(A\)</span> dan melakukan irisan (<em>intersection</em>) dengan komplemennya <span class="math notranslate nohighlight">\(\overline{A}\)</span>, hasilnya adalah himpunan kosong  <span class="math notranslate nohighlight">\(\emptyset\)</span>. Ini karena tidak ada elemen yang bisa berada di <span class="math notranslate nohighlight">\(A\)</span> sekaligus di komplemen <span class="math notranslate nohighlight">\(\overline{A}. Elemen yang berada di \)</span>A<span class="math notranslate nohighlight">\( tidak mungkin berada diluar \)</span>A<span class="math notranslate nohighlight">\( (yaituu di \)</span>\overline{A}<span class="math notranslate nohighlight">\() pada saat yang sama.
-**Contoh:** Mengambil contoh yang sama, jika \)</span>A<span class="math notranslate nohighlight">\( = {1,2} dan \)</span>\overline{A}<span class="math notranslate nohighlight">\( = {3,4,5}, maka irisan \)</span>A \cap \overline{A}<span class="math notranslate nohighlight">\( adalah himpunan kosong kerena tidak ada elemen yang terdapat di kedua himpunan tersebut. Sehingga \)</span>A \cap \overline{A} = \emptyset$.</p>
-</div>
+<p><strong>Penjelasan:</strong>
+Hukum ini menyatakan bahwa jika kita mengambil suatu himpunan <span class="math notranslate nohighlight">\(A\)</span> dan melakukan irisan (<em>intersection</em>) dengan komplemennya <span class="math notranslate nohighlight">\(\overline{A}\)</span>, hasilnya adalah himpunan kosong  <span class="math notranslate nohighlight">\(\emptyset\)</span>. Ini karena tidak ada elemen yang bisa berada di <span class="math notranslate nohighlight">\(A\)</span> sekaligus di komplemen <span class="math notranslate nohighlight">\(\overline{A}. Elemen yang berada di \)</span>A<span class="math notranslate nohighlight">\( tidak mungkin berada diluar \)</span>A<span class="math notranslate nohighlight">\( (yaituu di \)</span>\overline{A}$) pada saat yang sama.</p>
+<p><strong>Contoh:</strong>
+Mengambil contoh yang sama, jika <span class="math notranslate nohighlight">\(A\)</span> = {1,2} dan <span class="math notranslate nohighlight">\(\overline{A}\)</span> = {3,4,5}, maka irisan <span class="math notranslate nohighlight">\(A \cap \overline{A}\)</span> adalah himpunan kosong kerena tidak ada elemen yang terdapat di kedua himpunan tersebut. Sehingga <span class="math notranslate nohighlight">\(A \cap \overline{A} = \emptyset\)</span>.</p>
 </section>
 </section>
 
@@ -572,7 +547,7 @@ Diberikan dua himpunan sebagai berikut:</p>
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Welcome to your Jupyter Book</p>
+        <p class="prev-next-title">Welcome to fitria cahaya kurnia’s notes</p>
       </div>
     </a>
     <a class="right-next"
@@ -600,27 +575,10 @@ Diberikan dua himpunan sebagai berikut:</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">1. De Morgan Laws</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#penjelasan">Penjelasan:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#de-morgan-laws">1. <strong>De Morgan Laws</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#absortion-laws"><strong>2. Absortion Laws</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#complement-laws"><strong>3. Complement Laws</strong></a></li>
 </ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#absortion-laws">2. Absortion Laws</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hukum-absorpsi-kedua-untuk-gabungan-dan-irisan">2. Hukum Absorpsi Kedua (untuk gabungan dan irisan)</a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#penyelesaian"><strong>Penyelesaian:</strong></a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#buktikan-a-cup-a-cap-b-a">1. <strong>Buktikan <span class="math notranslate nohighlight">\(( A \cup (A \cap B) = A)\)</span>:</strong></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#buktikan-a-cap-a-cup-b-a">2. <strong>Buktikan <span class="math notranslate nohighlight">\(( A \cap (A \cup B) = A)\)</span>:</strong></a></li>
-</ul>
-</li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#jawaban"><strong>Jawaban:</strong></a></li>
-<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#complement-laws">3. Complement Laws</a><ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hukum-komplemen-gabungan">1. Hukum Komplemen Gabungan</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#hukum-komplemen-irisan">2. Hukum Komplemen Irisan</a></li>
-</ul>
-</li>
-</ul>
-
   </nav></div>
 
 </div></div>
