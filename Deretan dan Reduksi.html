@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Welcome to fitria cahaya kurnia’s notes &#8212; Materi Matematika Diskrit</title>
+    <title>Deret dan Reduksi &#8212; Materi Matematika Diskrit</title>
   
   
   
@@ -59,10 +59,10 @@
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
     <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
     <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'Deretan dan Reduksi';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="1. De Morgan Laws" href="HIMPUNAN.html" />
+    <link rel="prev" title="Social Network Analysis (SNA)" href="Analisa%20Graph.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -125,8 +125,6 @@
       
       
       
-        
-      
       <div class="bd-sidebar-primary bd-sidebar">
         
 
@@ -145,7 +143,7 @@
     
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="intro.html">
   
   
   
@@ -176,13 +174,13 @@
     <div class="bd-toc-item navbar-nav active">
         
         <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
                     Welcome to fitria cahaya kurnia’s notes
                 </a>
             </li>
         </ul>
-        <ul class="nav bd-sidenav">
+        <ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="HIMPUNAN.html">1. De Morgan Laws</a></li>
 
 
@@ -194,7 +192,7 @@
 
 
 <li class="toctree-l1"><a class="reference internal" href="Analisa%20Graph.html">Social Network Analysis (SNA)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Deretan%20dan%20Reduksi.html">Deret dan Reduksi</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Deret dan Reduksi</a></li>
 </ul>
 
     </div>
@@ -266,7 +264,7 @@
       
       
       
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FDeretan dan Reduksi.html&body=Your%20issue%20content%20here." target="_blank"
    class="btn btn-sm btn-source-issues-button dropdown-item"
    title="Open an issue"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -296,7 +294,7 @@
       
       
       
-      <li><a href="_sources/intro.md" target="_blank"
+      <li><a href="_sources/Deretan dan Reduksi.md" target="_blank"
    class="btn btn-sm btn-download-source-button dropdown-item"
    title="Download source file"
    data-bs-placement="left" data-bs-toggle="tooltip"
@@ -367,7 +365,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -378,11 +378,23 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Welcome to fitria cahaya kurnia’s notes</h1>
+    <h1>Deret dan Reduksi</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deret">Deret</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-deret">Contoh Deret</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rekursif">Rekursif</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -392,25 +404,116 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="welcome-to-fitria-cahaya-kurnia-s-notes">
-<h1>Welcome to fitria cahaya kurnia’s notes<a class="headerlink" href="#welcome-to-fitria-cahaya-kurnia-s-notes" title="Link to this heading">#</a></h1>
-<p>“This is Fitria’s note explaining the material we’ve already learned.”</p>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="HIMPUNAN.html">1. De Morgan Laws</a></li>
-<li class="toctree-l1"><a class="reference internal" href="HIMPUNAN.html#absortion-laws">2. Absortion Laws</a></li>
-<li class="toctree-l1"><a class="reference internal" href="HIMPUNAN.html#penyelesaian"><strong>Penyelesaian:</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="HIMPUNAN.html#jawaban"><strong>Jawaban:</strong></a></li>
-<li class="toctree-l1"><a class="reference internal" href="HIMPUNAN.html#complement-laws">3. Complement Laws</a></li>
-<li class="toctree-l1"><a class="reference internal" href="LOGIKA-MATEMATIKA.html">LOGIKA MATEMATIKA</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Algoritma.html">Algoritma</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Aljabar-Boolean.html">Aljabar Boolean</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Aljabar-Boolean.html#gerbang-logika">Gerbang Logika</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Aljabar-Boolean.html#kesimpulan">Kesimpulan</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Analisa%20Graph.html">Social Network Analysis (SNA)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Deretan%20dan%20Reduksi.html">Deret dan Reduksi</a></li>
+  <section class="tex2jax_ignore mathjax_ignore" id="deret-dan-reduksi">
+<h1>Deret dan Reduksi<a class="headerlink" href="#deret-dan-reduksi" title="Link to this heading">#</a></h1>
+<section id="deret">
+<h2>Deret<a class="headerlink" href="#deret" title="Link to this heading">#</a></h2>
+<p>Deret adalah penjumlahan suku-suku dari suatu barisan. Misalnya, terdapat barisan U1, U2, U3, U4, …, Un, maka deret itu adalah U1 + U2 + U3 + U4 +…, Un. Oh iya, “U” itu artinya suku ya. Kalau Un berarti suku ke-n.</p>
+<p><strong>Penjumlahan Deretan</strong>
+Jumlah deretan tertentu dapat dinyatakan dalam bentuk:
+$<span class="math notranslate nohighlight">\(
+S = \sum_{i=m}^n a_i
+\)</span>$</p>
+<p>Keterangan:
+<span class="math notranslate nohighlight">\(i\)</span>: indeks penjumlahan
+<span class="math notranslate nohighlight">\(m\)</span>: batas bawah
+<span class="math notranslate nohighlight">\(n\)</span>: batas atas</p>
+<p><strong>Contoh Soal</strong>
+$<span class="math notranslate nohighlight">\(
+\sum_{i=1}^{4} i = 1 + 2 + 3 + 4 = 10
+\)</span>$</p>
+<section id="contoh-deret">
+<h3>Contoh Deret<a class="headerlink" href="#contoh-deret" title="Link to this heading">#</a></h3>
+<p><strong>1. Deret Aritmatika</strong>
+Deret Aritmetika adalah jumlah suku ke-n pertama pada barisan aritmatika.</p>
+<p>Misalnya, di suatu barisan memiliki suku pertama, yaitu 1. Suku pertama barisan aritmetika disimbolkan dengan U1 atau a. Lalu, di suku kedua (U2), yaitu 4. Suku ketiga (U3), yaitu 7, suku keempat (U4), yaitu 10, dan seterusnya. Berarti, barisan ini memiliki beda, yaitu 3 pada setiap sukunya.
+<strong>Rumus</strong>
+**$<span class="math notranslate nohighlight">\(U_n = a + (n - 1)b\)</span><span class="math notranslate nohighlight">\(**
+U20 = 1 + (20 – 1)2
+U20 = 1 + (19.2)
+U20 = 1 + 38 = 39
+(\)</span>a<span class="math notranslate nohighlight">\( : suku pertama, \)</span>b<span class="math notranslate nohighlight">\( : beda atau selisih antar suku, \)</span>n$ : nomor suku yang dicari)</p>
+<p>Jadi, suku ke-20 barisan aritmetika tersebut adalah 39.</p>
+<p><strong>2. Deret Geometri</strong>
+Deret Geometri adalah yang bentuknya seperti barisan geometri, tetapi ditulis dalam bentuk penjumlahan. Rasio pada deret geometri tersebut disimbolkan dengan r. Contoh sederhana dari deret geometri adalah: 1 + 4 + 16 + 64 + 256,….
+Contoh lain dari deret geometri adalah:
+S1 = U1 (jumlah 1 suku pertama)
+S2 = U1 + U2 (jumlah 2 suku pertama)
+S3 = U1 + U2 + U3 (jumlah 3 suku pertama)
+S4 = U1 + U2 + U3 + U4 (jumlah 4 suku pertama) dan seterusnya.
+<strong>Rumus</strong>
+<strong>$<span class="math notranslate nohighlight">\(U_n = a \cdot r^{n-1}\)</span>$</strong>
+768 = 3 . 2^(n-1)
+2^(n-1) = 768 / 3 —&gt; 256 —&gt; 2^8
+n-1 = 8
+n = 8 + 1 = 9</p>
+<p><strong>3. Deret Fibonacci</strong>
+Deret Fibonacci didefinisikan secara rekursif (berulang). Misalkan dalam beberapa pola barisan bilangan dengan dua suku pertama  F1 = 0 dan F2 = 1.
+Suku selanjutnya dirumuskan secara rekursif sebagai berikut.
+$<span class="math notranslate nohighlight">\(F_{n+1} = F_{n-1} + F_n\)</span>$
+Berikut ini akan dijelaskan mengenai rumus Fibonacci.
+<strong>Contoh Soal</strong>
+4, 7, 11, 18, 29, …
+Tentukan tiga suku selanjutnya dari barisan di atas.
+Suku ke-4 = 18
+Suku ke-5 = 29
+Suku ke-6 = 18 + 29 = 47
+Suku ke-7 = 29 + 47 = 76
+Suku ke-8 = 47 + 76 = 123
+Tiga suku berikutnya yaitu 47, 76, dan 123.</p>
+</section>
+</section>
+<section id="rekursif">
+<h2>Rekursif<a class="headerlink" href="#rekursif" title="Link to this heading">#</a></h2>
+<p>Rekursif terjadi ketika suatu objek atau fungsi didefinisikan menggunakan dirinya sendiri. Proses ini disebut rekursi.
+Fungsi rekursif terdiri dari:</p>
+<ul class="simple">
+<li><p>Basis: Nilai awal yang terdefinisi secara eksplisit.</p></li>
+<li><p>Rekurens: Kaidah yang mendefinisikan fungsi berdasarkan nilai sebelumnya.</p></li>
 </ul>
-</div>
+<p>Contoh:
+Misalkan <span class="math notranslate nohighlight">\(f(n)\)</span> didefinisikan secara rekursif:
+$<span class="math notranslate nohighlight">\(
+f(n) =
+\begin{cases} 
+1, &amp; \text{jika } n = 0 \\
+f(n-1) + 2, &amp; \text{jika } n &gt; 0
+\end{cases}
+\)</span><span class="math notranslate nohighlight">\(
+Untuk \)</span>n<span class="math notranslate nohighlight">\( = 3:
+\)</span><span class="math notranslate nohighlight">\(
+\begin{align*}
+f(3) &amp; = f(2) + 2 \\
+     &amp; = (f(1) + 2) + 2 \\
+     &amp; = ((f(0) + 2) + 2) + 2 \\
+     &amp; = 1 + 2 + 2 + 2 \\
+     &amp; = 7
+\end{align*}
+\)</span>$
+<strong>Latihan</strong></p>
+<ol class="arabic simple">
+<li><p>Definisi <span class="math notranslate nohighlight">\(a_n\)</span>
+secara Rekursif
+Jika <span class="math notranslate nohighlight">\(a\)</span> adalah bilangan ril tak-nol dan <span class="math notranslate nohighlight">\(n\)</span> adalah bilangan bulat tidak-negatif, maka <span class="math notranslate nohighlight">\(a_n\)</span> didefinisikan sebagai berikut:
+$<span class="math notranslate nohighlight">\(
+a_n =
+\begin{cases} 
+1, &amp; \text{jika } n = 0 \\
+a \cdot a_{n-1}, &amp; \text{jika } n &gt; 0
+\end{cases}
+\)</span>$</p></li>
+<li><p>Definisi <span class="math notranslate nohighlight">\(a⋅b\)</span> secara Rekursif
+Jika <span class="math notranslate nohighlight">\(a\)</span> dan <span class="math notranslate nohighlight">\(b\)</span> adalah bilangan bulat positif, maka
+<span class="math notranslate nohighlight">\(a⋅b\)</span> didefinisikan sebagai berikut:
+$<span class="math notranslate nohighlight">\(
+a \cdot b =
+\begin{cases} 
+a, &amp; \text{jika } b = 1 \\
+a + (a \cdot (b-1)), &amp; \text{jika } b &gt; 1
+\end{cases}
+\)</span>$</p></li>
+</ol>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -443,14 +546,14 @@ document.write(`
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="right-next"
-       href="HIMPUNAN.html"
-       title="next page">
+    <a class="left-prev"
+       href="Analisa%20Graph.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">1. De Morgan Laws</p>
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Social Network Analysis (SNA)</p>
       </div>
-      <i class="fa-solid fa-angle-right"></i>
     </a>
 </div>
                 </footer>
@@ -458,6 +561,25 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#deret">Deret</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-deret">Contoh Deret</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#rekursif">Rekursif</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
