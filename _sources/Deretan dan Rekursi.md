@@ -12,9 +12,7 @@ Deret adalah penjumlahan suku-suku dari suatu barisan. Misalnya, terdapat barisa
 
 Jumlah deretan tertentu dapat dinyatakan dalam bentuk:
 
-$$
-S = \sum_{i=m}^n a_i
-$$
+$$S = \sum_{i=m}^n a_i$$
 
 Keterangan:
 
@@ -26,9 +24,16 @@ $n$: batas atas
 
 **Contoh Soal**
 
-$$
-\sum_{i=1}^{4} i = 1 + 2 + 3 + 4 = 10
-$$
+$$\sum_{i=1}^{4} i = 1 + 2 + 3 + 4 = 10$$
+
+| Sum | Closed Form |
+| :--- | :--- |
+| $\sum_{k=0}^n a r^k(r \neq 0)$ | $\frac{a r^{n+1}-a}{r-1}, r \neq 1$ |
+| $\sum_{k=1}^n k$ | $\frac{n(n+1)}{2}$ |
+| $\sum_{k=1}^n k^2$ | $\frac{n(n+1)(2 n+1)}{6}$ |
+| $\sum_{k=1}^n k^3$ | $\frac{n^2(n+1)^2}{4}$ |
+| $\sum_{k=0}^{\infty} x^k,\|x\|<1$ | $\frac{1}{1-x}$ |
+| $\sum_{k=1}^{\infty} k x^{k-1},\|x\|<1$ | $\frac{1}{(1-x)^2}$ |
 
 
 ### Contoh Deret
@@ -40,7 +45,7 @@ Misalnya, di suatu barisan memiliki suku pertama, yaitu 1. Suku pertama barisan 
 
 **Rumus**
 
-**$$U_n = a + (n - 1)b$$**
+$$U_n = a + (n - 1)b$$
 
 U20 = 1 + (20 – 1)2
 
@@ -74,7 +79,7 @@ S4 = U1 + U2 + U3 + U4 (jumlah 4 suku pertama) dan seterusnya.
 
 **Rumus**
 
-**$$U_n = a \cdot r^{n-1}$$**
+$$U_n = a \cdot r^{n-1}$$
 
 768 = 3 . 2^(n-1)
 
@@ -134,15 +139,14 @@ f(n-1) + 2, & \text{jika } n > 0
 \end{cases}
 $$
 Untuk $n$ = 3:
-$$
-\begin{align*}
+
+$$\begin{align*}
 f(3) & = f(2) + 2 \\
      & = (f(1) + 2) + 2 \\
      & = ((f(0) + 2) + 2) + 2 \\
      & = 1 + 2 + 2 + 2 \\
      & = 7
-\end{align*}
-$$
+\end{align*}$$
 
 **Latihan**
 1. Definisi $a_n$

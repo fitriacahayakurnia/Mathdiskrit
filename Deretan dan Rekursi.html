@@ -408,25 +408,50 @@ document.write(`
 <p><strong>Penjumlahan Deretan</strong></p>
 <p>Jumlah deretan tertentu dapat dinyatakan dalam bentuk:</p>
 <div class="math notranslate nohighlight">
-\[
-S = \sum_{i=m}^n a_i
-\]</div>
+\[S = \sum_{i=m}^n a_i\]</div>
 <p>Keterangan:</p>
 <p><span class="math notranslate nohighlight">\(i\)</span>: indeks penjumlahan</p>
 <p><span class="math notranslate nohighlight">\(m\)</span>: batas bawah</p>
 <p><span class="math notranslate nohighlight">\(n\)</span>: batas atas</p>
 <p><strong>Contoh Soal</strong></p>
 <div class="math notranslate nohighlight">
-\[
-\sum_{i=1}^{4} i = 1 + 2 + 3 + 4 = 10
-\]</div>
+\[\sum_{i=1}^{4} i = 1 + 2 + 3 + 4 = 10\]</div>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head text-left"><p>Sum</p></th>
+<th class="head text-left"><p>Closed Form</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-left"><p><span class="math notranslate nohighlight">\(\sum_{k=0}^n a r^k(r \neq 0)\)</span></p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(\frac{a r^{n+1}-a}{r-1}, r \neq 1\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><span class="math notranslate nohighlight">\(\sum_{k=1}^n k\)</span></p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(\frac{n(n+1)}{2}\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><span class="math notranslate nohighlight">\(\sum_{k=1}^n k^2\)</span></p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(\frac{n(n+1)(2 n+1)}{6}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><span class="math notranslate nohighlight">\(\sum_{k=1}^n k^3\)</span></p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(\frac{n^2(n+1)^2}{4}\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-left"><p><span class="math notranslate nohighlight">\(\sum_{k=0}^{\infty} x^k,|x|&lt;1\)</span></p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(\frac{1}{1-x}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-left"><p><span class="math notranslate nohighlight">\(\sum_{k=1}^{\infty} k x^{k-1},|x|&lt;1\)</span></p></td>
+<td class="text-left"><p><span class="math notranslate nohighlight">\(\frac{1}{(1-x)^2}\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <section id="contoh-deret">
 <h3>Contoh Deret<a class="headerlink" href="#contoh-deret" title="Link to this heading">#</a></h3>
 <p><strong>1. Deret Aritmatika</strong></p>
 <p>Deret Aritmetika adalah jumlah suku ke-n pertama pada barisan aritmatika.</p>
 <p>Misalnya, di suatu barisan memiliki suku pertama, yaitu 1. Suku pertama barisan aritmetika disimbolkan dengan U1 atau a. Lalu, di suku kedua (U2), yaitu 4. Suku ketiga (U3), yaitu 7, suku keempat (U4), yaitu 10, dan seterusnya. Berarti, barisan ini memiliki beda, yaitu 3 pada setiap sukunya.</p>
 <p><strong>Rumus</strong></p>
-<p><strong>$<span class="math notranslate nohighlight">\(U_n = a + (n - 1)b\)</span>$</strong></p>
+<div class="math notranslate nohighlight">
+\[U_n = a + (n - 1)b\]</div>
 <p>U20 = 1 + (20 – 1)2</p>
 <p>U20 = 1 + (19.2)</p>
 <p>U20 = 1 + 38 = 39</p>
@@ -444,7 +469,8 @@ Contoh lain dari deret geometri adalah:</p>
 <p>S3 = U1 + U2 + U3 (jumlah 3 suku pertama)</p>
 <p>S4 = U1 + U2 + U3 + U4 (jumlah 4 suku pertama) dan seterusnya.</p>
 <p><strong>Rumus</strong></p>
-<p><strong>$<span class="math notranslate nohighlight">\(U_n = a \cdot r^{n-1}\)</span>$</strong></p>
+<div class="math notranslate nohighlight">
+\[U_n = a \cdot r^{n-1}\]</div>
 <p>768 = 3 . 2^(n-1)</p>
 <p>2^(n-1) = 768 / 3 —&gt; 256 —&gt; 2^8</p>
 <p>n-1 = 8</p>
@@ -484,16 +510,15 @@ f(n) =
 f(n-1) + 2, &amp; \text{jika } n &gt; 0
 \end{cases}
 \end{split}\]</div>
-<p>Untuk <span class="math notranslate nohighlight">\(n\)</span> = 3:
-$<span class="math notranslate nohighlight">\(
-\begin{align*}
+<p>Untuk <span class="math notranslate nohighlight">\(n\)</span> = 3:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{align*}
 f(3) &amp; = f(2) + 2 \\
      &amp; = (f(1) + 2) + 2 \\
      &amp; = ((f(0) + 2) + 2) + 2 \\
      &amp; = 1 + 2 + 2 + 2 \\
      &amp; = 7
-\end{align*}
-\)</span>$</p>
+\end{align*}\end{split}\]</div>
 <p><strong>Latihan</strong></p>
 <ol class="arabic simple">
 <li><p>Definisi <span class="math notranslate nohighlight">\(a_n\)</span>
